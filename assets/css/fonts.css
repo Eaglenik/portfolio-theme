@@ -1,0 +1,38 @@
+@font-face{
+  font-family: 'Rubikiso';
+  src: url("../fonts/Rubik-iso/RubikIso-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face{
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons/fa-light-300.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons/fa-regular-400.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons/fa-solid-900.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons/fa-brands-400.ttf") format("truetype");
+  font-weight: 400;
+}
+.icon-sun::before{content: '\f185'; font-weight: 300;}
+.icon-moon::before{content: '\f186'; font-weight: 300;}
+.icon-arrowdown::before{content: '\f107'; font-weight: 900;}
+.icon-gmail::before{content: '\f0e0'; font-weight: 400; color: var(--text);}
+.icon-github::before{content: '\f09b'; font-weight: 400; color: var(--text);}
+.icon-telegram::before{content: '\f2c6'; font-weight: 400; color: var(--text);}
+.icon-phone::before{content: '\f095'; font-weight: 400; color: var(--text);}
+.icon-cross::before{content: '\f00d'; font-weight: 400; color: var(--text);}

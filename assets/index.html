@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="libs/gsap/gsap.min.js"></script>
+	<script src="libs/gsap/ScrollTrigger.min.js"></script>
+	<script src="libs/gsap/ScrollSmoother.min.js"></script>
+  <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="image/user-solid.svg">
+</head>
+<body>
+  <!-- navbar -->
+  <div class="navbar--ban">
+    <nav class="container navbar d-flex justify-content-between align-content-center">
+      <ul class="navbar-list justify-content-center align-content-center gap-sm-4 gap-2 p-0 m-0">
+        <li><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="navbar-list_contact"><a href="#!" class="lng-ca">Contact</a></button></li>
+      </ul>
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body d-flex flex-column align-items-start gap-2">
+          <button data-bs-dismiss="offcanvas" aria-label="Закрыть"><a href="#jobs" class="lng-pa2">My works</a></button>
+          <button data-bs-dismiss="offcanvas" aria-label="Закрыть"><a href="#skills" class="lng-sa2">Skills</a></button>
+          <div class="offcanvas-body_contact">
+            <h3 class="text-center">Contact</h3>
+            <div class="modal-body_contacts row flex-column align-items-center g-2">
+              <div class="col-3 d-flex gap-2"><span class="icon-gmail"></span><p>23anohinnikolay23 @gmail.com</p></div>
+              <div class="col-3 d-flex gap-2"><span class="icon-github"></span><a href="https://github.com/Eaglenik">Eaglenik</a></div>
+              <div class="col-3 d-flex gap-2"><span class="icon-telegram"></span><a href="https://t.me/L1sTerbak">L1sTerbak</a></div>
+              <div class="col-3 d-flex gap-2"><span class="icon-phone"></span><p>+998 90 945 72 09</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-settings d-flex align-items-center gap-2">
+        <div class="dropdown d-flex align-items-center">
+          <a class="btn btn-secondary dropdown-toggle lng-lan" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">En</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#en" id="lang-en">En</a></li>
+            <li><a class="dropdown-item" href="#ru" id="lang-ru">Ru</a></li>
+          </ul>
+        </div>
+        <button type="button" class="navbar-btn dark" data-theme="dark">
+          <span class="icon-sun"></span>
+          <span class="icon-moon"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex align-items-center justify-content-end">
+          <button type="button" class="icon-cross d-flex align-items-center" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body_contacts row flex-column align-items-center g-2">
+            <div class="col-3 d-flex gap-2"><span class="icon-gmail"></span><p>23anohinnikolay23@gmail.com</p></div>
+            <div class="col-3 d-flex gap-2"><span class="icon-github"></span><a href="https://github.com/Eaglenik">Eaglenik</a></div>
+            <div class="col-3 d-flex gap-2"><span class="icon-telegram"></span><a href="https://t.me/L1sTerbak">L1sTerbak</a></div>
+            <div class="col-3 d-flex gap-2"><span class="icon-phone"></span><p>+998 90 945 72 09</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="content">
+      <!-- header -->
+      <section class="container header d-flex justify-content-between align-items-center row g-1 element-animation">
+        <div class="header-info d-flex flex-column col-6">
+          <h1 class="lng-hh1">about.</h1>
+          <p class="lng-hp1">Hi.My name is Nikolay.Iʼm a Front-end Web developer from Tashkent.</p>
+          <p class="lng-hp2">This is my website business card.</p>
+        </div>
+        <div class="header-img col-6">
+          <img data-speed="0.7" src="image/development-big@2x.png" alt="">
+        </div>
+      </section>
+      <!-- certificates -->
+      <div class="certificates">
+        <section class="container certificate ser1 row d-flex justify-content-between align-items-center element-animation " >
+          <div class="certificate-img scroll-left col-6">
+            <img data-lag=".1" src="image/photo_2022-11-02_02-13-32.jpg" alt="">
+          </div>
+          <div class="certificate-text scroll-right d-flex col-6 flex-column" id="scrollspyHeading2">
+            <h1 class="lng-ch1">I have completed a nine-month web programming course at the educational institution "ProWeb".</h1>
+            <p class="lng-cp">My web development experience is 1.5 year.</p>
+          </div>
+        </section>
+        <section class="container certificate ser2 row d-flex justify-content-between align-items-center element-animation " >
+          <div class="certificate-text scroll-left d-flex col-6 flex-column" id="scrollspyHeading2">
+            <h1 class="lng-sp">I also speak English at level B1 (intermidiate)</h1>
+          </div>
+          <div class="certificate-img scroll-right col-6">
+            <img data-lag=".1" src="image/CamScanner 28-01-2023 16.29.jpg" alt="">
+          </div>
+        </section>
+      </div>
+      <!-- skills -->
+      <section class="skills container element-animation" id="skills">
+        <div class="skills-title"><h1 class="lng-asa">My skills</h1></div>
+        <div class="owl-carousel">
+          <div class="skills-item">
+            <a href="https://ru.wikipedia.org/wiki/HTML" target="_blank"><img src="image/skills/png-transparent-web-development-responsive-web-design-advanced-css-cascading-style-sheets-html-web-design-web-design-search-engine-optimization-orange.png" alt=""></a>
+        </div>
+        <div class="skills-item">
+            <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank"><img src="image/skills/png-clipart-cascading-style-sheets-html-css3-bootstrap-world-wide-web-blue-angle.png" alt=""></a>
+        </div>
+        <div class="skills-item">
+            <a href="https://www.javascript.com/" target="_blank"><img src="image/skills/110-1106837_proj4js-by-proj4js-javascript-icon-logo-png-clipart.png" alt=""></a>
+        </div>
+        <div class="skills-item">
+            <a href="https://getbootstrap.com/" target="_blank"><img src="image/skills/png-clipart-responsive-web-design-bootstrap-sass-cascading-style-sheets-html-framework-purple-template.png" alt=""></a>
+        </div>
+        <div class="skills-item">
+            <a href="https://sass-lang.com/" target="_blank"><img src="image/skills/Sass-Logo.png" alt=""></a>
+        </div>
+        <div class="skills-item">
+            <a href="https://pugjs.org/api/getting-started.html" target="_blank"><img src="image/skills/Cute-Pug-PNG-Image-File.png" alt=""></a>
+        </div>
+        <div class="skills-item">
+            <a href="https://wordpress.com" target="_blank"><img src="image/skills/blue-wordpress-logo-hd-picture-3.png" alt=""></a>
+        </div>
+        <div class="skills-item">
+            <a href="https://webpack.js.org/" target="_blank"><img src="image/skills/d7c0e18fe8efe7ced5adc19f2d97d60b.png" alt=""></a>
+        </div>
+        <div class="skills-item">
+            <a href="https://www.php.net/" target="_blank"><img src="image/skills/PHP-logo.svg.png" alt=""></a>
+        </div>
+        <div class="skills-item">
+            <a href="https://git-scm.com/" target="_blank"><img src="image/skills/git-logo.png" alt=""></a>
+        </div>
+        </div>
+      </section>
+      <!-- jobs -->
+      <section class="jobs container element-animation" id="jobs">
+        <h1 class="lng-jh1">My works</h1>
+        <p class="lng-jp">*In some layouts there may be shortcomings.</p>
+        <div class="jobs-items d-flex row justify-content-center align-items-center gap-3">
+          <div class="jobs-item col-sm-4">
+            <a href="https://granss.ru/"><img src="image/items/granss.png" alt=""></a>
+          </div>
+          <div class="jobs-item col-sm-4">
+            <a href="http://blog-19-30.rf.gd/"><img src="image/items/wordpress-19-30_.png" alt=""></a>
+          </div>
+          <div class="jobs-item col-sm-4">
+            <a href="https://eaglenik.github.io/furnity/"><img src="image/items/furnity.png" alt=""></a>
+            </div>
+            <div class="jobs-item col-sm-4">
+              <a href="https://eaglenik.github.io/open-shop/index.html"><img src="image/items/localhost_9000_.png" alt=""></a>
+            </div>
+          <div class="jobs-item col-sm-4">
+            <a href="https://eaglenik.github.io/Project-romsem/"><img src="image/items/eaglenik.github.io_Project-romsem_.png" alt=""></a>
+          </div>
+          <div class="jobs-item col-sm-4">
+            <a href="https://eaglenik.github.io/scroll/"><img src="image/items/scroll.png" alt=""></a>
+          </div>
+          <div class="jobs-item col-sm-4">
+            <a href="https://eaglenik.github.io/vue-sinemas/"><img src="image/items/eaglenik.github.io_vue-sinemas_.png" alt=""></a>
+          </div>
+          <div class="jobs-item col-sm-4">
+            <a href="https://eaglenik.github.io/Grovemade/"><img src="image/items/eaglenik.github.io_Grovemade_.png" alt=""></a>
+          </div>
+          <div class="jobs-item col-sm-4">
+            <a href="https://eaglenik.github.io/Expice-project/"><img src="image/items/eaglenik.github.io_Expice-project__.png" alt=""></a>
+          </div>
+          <div class="jobs-item col-sm-4">
+            <a href="https://eaglenik.github.io/Boulevard/">
+              <img src="image/items/_C__Users_23ano_AppData_Local_Temp_Rar$EXa14140.46173_index.html.png" alt="">
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
